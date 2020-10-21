@@ -12,7 +12,7 @@ function convertPlanetIntoHTML(planet) {
 	return (
 		<div className="card">
 			<div className="card-body">
-				<img src="https://via.placeholder.com/400x200" />
+				<img src="https://loremflickr.com/400/200/planets" />
 				<h5 className="card-title">{planet.name}</h5>
 				<p className="card-text">
 					<div>Population: {planet.population}</div>
@@ -41,10 +41,7 @@ export const Home = () => {
 				{store.planets.length == 0 ? "" : <h1 className="d-flex text-danger p4">Characters</h1>}
 				<div className="d-inline-flex">
 					{store.people.map((event, index) => {
-						return (
-							//console.log("index = " + index);
-							<Card key={index} data={event} />
-						);
+						return <Card key={index} data={event} />;
 					})}
 				</div>
 			</div>

@@ -8,7 +8,7 @@ export const Card = ({ data }) => {
 	return (
 		<div className="card">
 			<div className="card-body">
-				<img src="https://via.placeholder.com/400x200" />
+				<img src="https://loremflickr.com/320/240/starwars" />
 				<h5 className="card-title">{data.name}</h5>
 				<p className="card-text">
 					<div>Gender: {data.gender}</div>
