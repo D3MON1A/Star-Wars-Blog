@@ -1,12 +1,7 @@
 import React, { useEffect, useContext, useState } from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
-import starWarsImage from "../../img/starwars.jpg";
 import "../../styles/home.scss";
 import { Context } from "../store/appContext";
-import { Link } from "react-router-dom";
-import { Layout } from "../layout";
 import { Card } from "../component/card";
-import { Favorite } from "../component/favorite";
 
 function convertPlanetIntoHTML(planet) {
 	return (
